@@ -27,3 +27,14 @@ public class DigitalTextBox  {
             }
         });
     }
+
+
+    /**
+     * Метод для проверки на запись чисел в поле
+     */
+    private void validateField(){
+        Point mousePos = MouseInfo.getPointerInfo().getLocation();
+        setX(mousePos.x);
+        setY(mousePos.y);
+        this.dialogBox = new DialogBox(mainView.getShell());
+    }
